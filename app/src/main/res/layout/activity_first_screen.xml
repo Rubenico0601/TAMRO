@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <ImageButton
+        android:id="@+id/centerButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circular_button_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clevertap_logo"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/button_desc"/>
+</RelativeLayout>

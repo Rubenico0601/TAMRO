@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/rollingCT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clevertap_logo"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/CustomButtonStyle"
+            android:text="Login"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/updateProfileButton"
+            style="@style/CustomButtonStyle"
+            android:text="Update Your Profile"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:textColor="@color/black"/>
+
+        <!-- Login fields -->
+        <LinearLayout
+            android:id="@+id/loginFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_gradient">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/confirmLoginButton"
+                style="@style/CustomButtonStyle"
+                android:text="Confirm Login"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutLoginImage"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:background="@drawable/background_gradient">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/key"
+                android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Update profile fields -->
+        <LinearLayout
+            android:id="@+id/updateProfileFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_gradient">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/genderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/dobEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/updateButton"
+                style="@style/CustomButtonStyle"
+                android:text="Update"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/linearLayoutUpdateImage"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/background_gradient">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/update"
+                android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

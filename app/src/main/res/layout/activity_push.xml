@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".PushActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+        <ImageView
+            android:id="@+id/rollingImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clevertap_logo"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- CardView for Button 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Basic Push Template"
+                    android:id="@+id/btnBasic"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/cube"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Auto Carousel Template"
+                    android:id="@+id/btnAuto"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/auto"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Manual Carousel Template"
+                    android:id="@+id/btnManual"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/manual"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rating Template"
+                    android:id="@+id/btnRating"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/review"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 6 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Five Icons Template"
+                    android:id="@+id/btnFive"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/number_5"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 7 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Timer Template"
+                    android:id="@+id/btnTimer"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/stopwatch"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 8 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Zero Bezel Template"
+                    android:id="@+id/btnZero"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/zero"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Button 9 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:background="@drawable/background_gradient"> <!-- Set gradient background -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Input Box Template"
+                    android:id="@+id/btnInputBox"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/write"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/business"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,345 @@
+<!-- res/layout/activity_events.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/rollingImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/clevertap_logo"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Event without Properties Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/background_gradient">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cross"/>
+
+            <Button
+                android:id="@+id/eventButton"
+                style="@style/CustomButtonStyle"
+                android:text="Event without Properties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Event with Properties Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@drawable/background_gradient"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/checked"/>
+
+            <Button
+                android:id="@+id/eventWithPropertiesButton"
+                style="@style/CustomButtonStyle"
+                android:text="Event with Properties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Charged Button with Icon -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/background_gradient"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/earnings"/>
+
+            <Button
+                android:id="@+id/chargedButton"
+                style="@style/CustomButtonStyle"
+                android:text="Charged Button"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Event Name Layout (Button 1 - Initially Hidden) -->
+    <LinearLayout
+        android:id="@+id/eventNameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_gradient"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Event Name"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/eventNameEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Event Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/confirmEventButton1"
+            style="@style/CustomButtonStyle"
+            android:text="Confirm Event"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <!-- Event Name and Properties Layout (Button 2 - Initially Hidden) -->
+    <LinearLayout
+        android:id="@+id/eventNamePropertiesLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_gradient"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Event Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/eventNameEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Event Name"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Enter Event Properties"
+            android:textSize="20dp"/>
+
+        <!-- Property Fields (Manually Added) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gradient"
+            android:orientation="vertical">
+
+            <!-- Property 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradient"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/propertyNameEditText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_weight="1"
+                    android:hint="Property Name"/>
+
+                <EditText
+                    android:id="@+id/propertyValueEditText1"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_weight="1"
+                    android:hint="Property Value"/>
+            </LinearLayout>
+
+            <!-- Property 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradient"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/propertyNameEditText2"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Name"/>
+
+                <EditText
+                    android:id="@+id/propertyValueEditText2"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_weight="1"
+                    android:hint="Property Value"/>
+            </LinearLayout>
+
+            <!-- Property 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_gradient">
+
+                <EditText
+                    android:id="@+id/propertyNameEditText3"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Name"/>
+
+                <EditText
+                    android:id="@+id/propertyValueEditText3"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Value"/>
+            </LinearLayout>
+
+            <!-- Property 4 -->
+            <LinearLayout
+                android:background="@drawable/background_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/propertyNameEditText4"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Name"/>
+
+                <EditText
+                    android:id="@+id/propertyValueEditText4"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Value"/>
+            </LinearLayout>
+
+            <!-- Property 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradient"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/propertyNameEditText5"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Name"/>
+
+                <EditText
+                    android:id="@+id/propertyValueEditText5"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Property Value"/>
+            </LinearLayout>
+
+            <!-- Confirm Event Button -->
+            <Button
+                android:id="@+id/confirmEventButton2"
+                style="@style/CustomButtonStyle"
+                android:text="Confirm Event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:enabled="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
